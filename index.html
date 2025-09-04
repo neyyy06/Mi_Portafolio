@@ -1,0 +1,267 @@
+<!DOCTYPE html> <!-- Documento en HTML5 -->
+<html lang="es"> <!-- Idioma configurado en español -->
+
+<head>
+    <title>Mi Portafolio</title> <!-- Título de la pestaña del navegador -->
+
+    <!-- Bootstrap 5 para estilos y componentes -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Fuente DM Sans desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Estilo en línea para definir color de fondo -->
+    <style>
+        body {
+            background-color: #f4f4ed;
+        }
+    </style>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <!-- Barra de navegación -->
+        <h4>
+            <nav class="barra_navegacion-flex">
+                <!-- Nombre del portafolio -->
+                <div class="nombre">
+                    <span class="nombreTexto">Neyry Prado</span>
+                    <span class="estrella">⭐</span>
+                </div>
+
+                <!-- Enlaces internos a secciones -->
+                <div class="align-items-right">
+                    <a href="#sobre-mi">Sobre Mí</a>
+                    <a href="#demos">Demostraciones</a>
+                    <a href="#formulario">Formulario de proyectos</a>
+                </div>
+            </nav>
+        </h4>
+    </header>
+
+    <!-- SECCIÓN DE PRESENTACIÓN -->
+    <div class="titulo-con-imagen-flex">
+        <div class="las-demostraciones-flex">
+
+            <!-- Imagen de perfil -->
+            <div class="imagen-titulo">
+                <img src="iconos/avatar-Photoroom.png" alt="Foto perfil" class="titulo-img">
+            </div>
+
+            <!-- Nombre y descripción -->
+            <div class="tituloPrincipal">
+                <h1 class="text-justify">Neyry Prado</h1>
+                <h3>
+                    <p class="text-justify">
+                        <br>Soy Ingeniera de Sistemas.
+                        <br>Enfoque en desarrollar soluciones y mejorar
+                        <br>continuamente habilidades técnicas.
+                    </p>
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN SOBRE MÍ -->
+    <section id="sobre-mi" class="seccion-sobre-mi">
+        <h1 class="text-center">Sobre Mí</h1>
+
+        <div class="perfil-formacion-flex">
+            <!-- Perfil profesional -->
+            <div class="perfil">
+                <h2>Perfil Profesional</h2>
+                <p class="text-justify">
+                    Ingeniera de Sistemas con formación en análisis,
+                    diseño y desarrollo de soluciones tecnológicas para mejorar procesos
+                    y optimizar recursos en entornos organizacionales.
+                    <br>Experiencia en programación, bases de datos,
+                    redes y desarrollo de software, con conocimientos en metodologías ágiles.
+                    <br>Capacidades destacadas: adaptación, pensamiento lógico y trabajo colaborativo.
+                </p>
+
+                <!-- Experiencia laboral -->
+                <div id="experiencia">
+                    <h3>Experiencia Laboral</h3>
+                    <table border="1" width="320px" bordercolor="9C49BA">
+                        <tr class="text-center">
+                            <th>Empresa</th>
+                            <th>Rol</th>
+                            <th>Tiempo</th>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Google</td>
+                            <td>Desarrollador de software</td>
+                            <td>8 años</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Pinterest</td>
+                            <td>Gerente de Proyecto</td>
+                            <td>5 años</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Formación académica y habilidades -->
+            <div class="formacion">
+                <div class="titulos">
+                    <h2>Formación Académica</h2>
+                    <ul>
+                        <li>Ingeniera de Sistemas - Unicomfacauca</li>
+                        <li>Magíster en Ciencia de Datos e Inteligencia Artificial - Universidad del Valle</li>
+                        <li>Doctora en Tecnologías de la Información Aplicadas - Universidad Nacional</li>
+                    </ul>
+                </div>
+
+                <br><br>
+
+                <!-- Habilidades -->
+                <div id="habilidades">
+                    <h3>Habilidades</h3>
+                    <ul>
+                        <li>Diseño web con HTML5</li>
+                        <li>Desarrollo Frontend con Angular</li>
+                        <li>Desarrollo backend con Django</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN DEMOSTRACIONES -->
+    <section id="demos" class="seccion-demostraciones">
+        <h1 id="titulo-demo" class="text-center">Demostraciones</h1>
+        <div class="las-demostraciones-flex">
+
+            <!-- Proyecto 1 -->
+            <div class="perfil">
+                <h2>Sistema de ventas</h2>
+                <div id="experiencia">
+                    <p class="text-justify">
+                        Aplicación para gestionar ventas de forma ágil,
+                        con control de productos, clientes y reportes básicos.
+                    </p>
+                    <!-- Video de YouTube -->
+                    <iframe width="300" height="230" src="https://www.youtube.com/embed/m-gj-4mT2E8"
+                        title="Sistema de ventas gratuito para Windows" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="perfil">
+                <h2>Sistema de Veterinaria</h2>
+                <div id="experiencia">
+                    <p class="text-justify">
+                        Sistema para clínicas veterinarias con registro de pacientes,
+                        historial médico y administración de citas.
+                    </p>
+                    <!-- Video de YouTube -->
+                    <iframe width="300" height="230" src="https://www.youtube.com/embed/kj-lU4TOO4k"
+                        title="Video tutorial OkVet versión gratis" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FORMULARIO -->
+    <section id="formulario" class="seccion-formulario">
+        <div class="container py-5">
+            <article class="mb-5">
+                <h1>Formulario de Proyectos</h1>
+                <h3 class="text-center mb-4">Cuéntanos sobre tu próximo proyecto</h3>
+
+                <!-- Formulario con Bootstrap -->
+                <form class="p-4 border rounded shadow bg-white">
+                    
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                        <label for="nombre1" class="form-label">Tu Nombre</label>
+                        <input type="text" class="form-control" id="nombre1" name="nombre" required>
+                    </div>
+
+                    <!-- Tratamiento -->
+                    <div class="mb-3">
+                        <label class="form-label">¿Le podemos decir?</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tratamiento1" id="joven1" value="joven">
+                                <label class="form-check-label" for="joven1">Joven</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tratamiento1" id="senor1" value="senor">
+                                <label class="form-check-label" for="senor1">Señor</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tratamiento1" id="senorita1" value="senorita">
+                                <label class="form-check-label" for="senorita1">Señorita</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tratamiento1" id="senora1" value="senora">
+                                <label class="form-check-label" for="senora1">Señora</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Correo -->
+                    <div class="mb-3">
+                        <label for="correo1" class="form-label">Correo</label>
+                        <input type="email" class="form-control" id="correo1" name="correo" required>
+                    </div>
+
+                    <!-- Tipo de Proyecto -->
+                    <div class="mb-3">
+                        <label class="form-label">¿Qué tipo de proyecto quiere que desarrollemos?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="web1" name="tipoApp" value="web">
+                            <label class="form-check-label" for="web1">Aplicación Web</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="movil1" name="tipoApp" value="movil">
+                            <label class="form-check-label" for="movil1">Aplicación Móvil</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="escritorio1" name="tipoApp" value="escritorio">
+                            <label class="form-check-label" for="escritorio1">Aplicación de Escritorio</label>
+                        </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="mb-3">
+                        <label for="descripcion1" class="form-label">Cuéntanos más sobre tu proyecto</label>
+                        <textarea class="form-control" id="descripcion1" name="descripcion" rows="5"></textarea>
+                    </div>
+
+                    <!-- Botón -->
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </article>  
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <div class="footer-icons">
+            <!-- Íconos de redes sociales -->
+            <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+                <img src="iconos/linkedIn.png" alt="LinkedIn" class="icono-red">
+            </a>
+            <a href="https://github.com/" target="_blank" title="GitHub">
+                <img src="iconos/github.ico" alt="GitHub" class="icono-red">
+            </a>
+            <a href="mailto:tuemail@ejemplo.com" title="Correo">
+                <img src="iconos/email.png" alt="Correo" class="icono-red">
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,287 @@
+
+
+/* ===========================
+   ESTILOS GENERALES
+=========================== */
+body {
+    margin: 0;                    /* elimina márgenes externos del navegador */
+    padding-bottom: 50px;         /* espacio en la parte inferior para que el footer fijo no cubra contenido */
+    font-family: Arial, sans-serif; /* fuente base */
+}
+
+/* ===========================
+   HEADER
+=========================== */
+header {
+    background-color: rgb(37, 25, 25); /* color de fondo oscuro */
+    color: white;                      /* texto en blanco */
+    padding: 10px 0;                   /* espacio interno arriba y abajo */
+}
+
+.barra_navegacion-flex {
+    display: flex;                     /* elementos en fila */
+    background-color: rgb(37, 25, 25); /* mismo color que header */
+    padding: 10px;                     /* espacio interno */
+    flex-wrap: wrap;                   /* permite que los elementos bajen en pantallas pequeñas */
+}
+
+.align-items-right {
+    display: flex;                     /* coloca los enlaces en fila */
+    justify-content: flex-end;         /* alineación hacia la derecha */
+    align-items: center;               /* centrado vertical */
+    gap: 30px;                         /* espacio entre enlaces */
+    flex-wrap: wrap;                   /* se acomoda en pantallas pequeñas */
+}
+
+.align-items-right a {
+    text-decoration: none;             /* sin subrayado */
+    color: white;                      /* texto en blanco */
+    padding: 8px 24px;                 /* espacio interno en enlaces */
+    border-radius: 4px;                /* bordes redondeados */
+    transition: background 0.3s, box-shadow 0.3s; /* animación suave */
+    font-family: 'Fira Sans', Arial, sans-serif;  /* fuente personalizada */
+    font-weight: bold;                 /* negrita */
+}
+
+.barra_navegacion-flex a:hover {
+    background-color: #e8d9ed;         /* fondo claro al pasar el mouse */
+    color: #426bc2;                    /* texto en azul */
+}
+
+.nombre {
+    margin: 0;                         /* elimina márgenes */
+    font-size: 1.2em;                   /* tamaño de fuente mayor */
+    flex: 1;                           /* ocupa espacio disponible */
+    text-align: left;                  /* texto alineado a la izquierda */
+    color: aliceblue;                  /* tono claro */
+    padding: 12px 20px;                /* espacio interno */
+}
+
+.nombreTexto {
+    font-family: 'Fira Sans', Arial, sans-serif; /* fuente personalizada */
+    font-weight: bold;                            /* negrita */
+}
+
+/* ===========================
+   ICONOS REDES
+=========================== */
+.icono-red {
+    width: 28px;                       /* ancho fijo */
+    height: 28px;                      /* alto fijo */
+    margin: 0 10px;                    /* espacio horizontal */
+    vertical-align: middle;            /* alineación con texto */
+    transition: filter 0.2s;           /* efecto suave al pasar el mouse */
+}
+
+.icono-red:hover {
+    filter: brightness(0.7) sepia(1) hue-rotate(180deg); /* efecto de color */
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    position: fixed;                   /* fijo en la pantalla */
+    left: 0;                           /* pegado al lado izquierdo */
+    bottom: 0;                         /* pegado al fondo */
+    width: 100%;                       /* ocupa todo el ancho */
+    background-color: rgb(39, 68, 155); /* color de fondo */
+    text-align: center;                /* centra el contenido */
+    padding: 28px 0;                   /* espacio interno */
+    z-index: 100;                      /* asegura que quede por encima */
+}
+
+.footer-icons a {
+    color: #c86de6;                    /* color inicial */
+    margin: 0 12px;                    /* espacio entre iconos */
+    font-size: 2rem;                   /* tamaño del icono */
+    transition: color 0.3s;            /* efecto de transición */
+    vertical-align: middle;            /* alineación vertical */
+}
+
+.footer-icons a:hover {
+    color: #426bc2;                    /* cambia de color al pasar el mouse */
+}
+
+/* ===========================
+   SECCIÓN PRINCIPAL (IMAGEN Y TEXTO)
+=========================== */
+.titulo-con-imagen-flex {
+    display: flex;                     /* elementos en fila */
+    gap: 3rem;                         /* espacio entre columnas */
+    flex-wrap: wrap;                   /* adaptable a pantallas pequeñas */
+    justify-content: center;           /* centrado horizontal */
+    align-items: center;               /* centrado vertical */
+    min-height: 90vh;                  /* ocupa casi toda la pantalla */
+}
+
+.titulo-img {
+    width: 100%;                       /* imagen adaptativa */
+    max-width: 400px;                  /* límite en tamaño grande */
+    border-radius: 50%;                /* forma circular */
+    object-fit: cover;                 /* recorte proporcional */
+}
+
+.tituloPrincipal {
+    width: 100%;                       /* ocupa todo el ancho disponible */
+    max-width: 400px;                  /* límite de ancho */
+    padding: 1rem;                     /* espacio interno */
+    margin: 0 auto;                    /* centrado */
+}
+
+.tituloPrincipal h1 {
+    font-family: 'Lobster', cursive;   /* fuente personalizada */
+    font-size: 4rem;                   /* tamaño grande */
+}
+
+.tituloPrincipalp {
+    font-family: 'Fira Sans', Arial, sans-serif; /* fuente personalizada */
+    font-weight: bold;                            /* negrita */
+}
+
+/* ===========================
+   FUENTES PERSONALIZADAS
+=========================== */
+@font-face {
+    font-family: 'Lobster';            /* fuente Lobster */
+    src: url('fuentes/Lobster/Lobster-Regular.ttf') format('truetype'); /* ruta */
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Fira Sans';          /* fuente Fira Sans */
+    src: url('fuentes/FiraSans/FiraSans-Regular.ttf') format('truetype'); /* ruta */
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===========================
+   SECCIÓN SOBRE MÍ
+=========================== */
+.seccion-sobre-mi {
+    min-height: 100vh;                 /* ocupa al menos una pantalla */
+    max-height: 80rem;                 /* altura máxima */
+    background: #cbcbf4;               /* color de fondo */
+    padding: 4rem 2rem;                /* espacio interno */
+}
+
+.seccion-sobre-mi h1 {
+    padding-top: 6px;                  /* espacio arriba */
+    padding-bottom: 10px;              /* espacio abajo */
+    text-align: center;                /* texto centrado */
+    font-family: 'Lobster', cursive;   /* fuente personalizada */
+    font-size: 4rem;                   /* tamaño grande */
+}
+
+.perfil-formacion-flex {
+    display: flex;                     /* elementos en fila */
+    gap: 3rem;                         /* espacio entre columnas */
+    flex-wrap: wrap;                   /* se ajusta en pantallas pequeñas */
+    justify-content: center;           /* centrado */
+    margin-top: 5px;                   /* espacio superior */
+}
+
+.perfil,
+.formacion {
+    background-color: white;           /* fondo blanco */
+    padding: 1rem;                     /* espacio interno */
+    border-radius: 8px;                /* bordes redondeados */
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* sombra ligera */
+    width: 100%;                       /* ocupa todo el ancho */
+    max-width: 400px;                  /* límite de ancho */
+    margin: 0 auto;                    /* centrado */
+    transition: transform .2s;         /* animación suave */
+}
+
+.perfil:hover,
+.formacion:hover {
+    transform: scale(1.05);            /* efecto zoom al pasar el mouse */
+}
+
+/* ===========================
+   SECCIÓN DEMOSTRACIONES
+=========================== */
+.seccion-demostraciones {
+    min-height: 100vh;                 /* ocupa al menos una pantalla */
+    background: #f8c98c;               /* color de fondo */
+}
+
+#titulo-demo {
+    font-family: 'Lobster', cursive;   /* fuente personalizada */
+    font-size: 4rem;                   /* tamaño grande */
+    padding-top: 10vh;                 /* espacio superior */
+    padding-bottom: 8vh;               /* espacio inferior */
+    text-align: center;                /* centrado */
+}
+
+.las-demostraciones-flex {
+    display: flex;                     /* coloca tarjetas en fila */
+    gap: 3rem;                         /* espacio entre tarjetas */
+    flex-wrap: wrap;                   /* adaptable */
+    justify-content: center;           /* centrado */
+}
+
+/* Iframes responsivos (videos) */
+.video-container {
+    position: relative;                /* contenedor relativo */
+    padding-bottom: 56.25%;            /* proporción 16:9 */
+    height: 0;                         /* altura inicial 0 */
+    overflow: hidden;                  /* oculta exceso */
+    max-width: 100%;                   /* ajusta al ancho */
+}
+
+.video-container iframe {
+    position: absolute;                /* absoluto dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%;                       /* ocupa todo el ancho */
+    height: 100%;                      /* ocupa todo el alto */
+}
+
+/* ===========================
+   SECCIÓN FORMULARIO
+=========================== */
+.seccion-formulario {
+    min-height: 100vh;                 /* ocupa toda la pantalla */
+    max-height: 80rem;                 /* altura máxima */
+    background: #e4f1f7;               /* color de fondo */
+}
+
+.seccion-formulario h1 {
+    padding-top: 10vh;                 /* espacio superior */
+    padding-bottom: 8vh;               /* espacio inferior */
+    text-align: center;                /* centrado */
+    font-family: 'Lobster', cursive;   /* fuente personalizada */
+    font-size: 4rem;                   /* tamaño grande */
+}
+
+/* ===========================
+   MEDIA QUERIES (RESPONSIVE)
+=========================== */
+@media (max-width: 768px) {
+
+    /* navegación en columna */
+    .barra_navegacion-flex {
+        flex-direction: column;        /* coloca enlaces en columna */
+        align-items: center;           /* centra */
+    }
+
+    .align-items-right {
+        justify-content: center;       /* centrado */
+        gap: 16px;                     /* menos espacio */
+        margin-top: 10px;              /* espacio arriba */
+    }
+
+    .nombre {
+        text-align: center;            /* texto centrado */
+        padding: 8px 0;                /* menos espacio interno */
+    }
+
+    /* títulos más pequeños */
+    .tituloPrincipal h1,
+    .seccion-sobre-mi h1,
+    #titulo-demo {
+        font-size: 2.5rem;             /* reduce tamaño */
+    }
+}
